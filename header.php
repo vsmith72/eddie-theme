@@ -26,6 +26,7 @@
                 <nav>
                     <span class="site-logo"></span>
                     <span class="header-nav"></span>
+                    <h1>Demystifying the Circle of Fifths</h1>
                 </nav>
             </section>
         </header>

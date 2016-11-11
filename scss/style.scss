@@ -18,27 +18,52 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
 
-$primary-color: #003444;
+$primary-color: #01332e;
 $secondary-color: #ec0000;
 $accent-bright: #65fe33;
-
-img{
+html {
+    font-size: 100%;
+    line-height: 1.5;
+}
+h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: $primary-color;
+}
+p {
+    font-size: 1.25rem;
+    text-align: justify;
+    text-align-last: left;
+}
+img,
+video{
     width: 100%;
 }
-footer {
-    background-color: $primary-color;
-    height: 150px;
-    padding: 10%;
+
+.content {
+    display: flex;
+    justify-content: space-around;
 }
-
 .hero-area {
-
+    display: flex;
+    justify-content: center;
+    align-content: center;
     background-image: url('img/bg-guitar.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 60vh;
+    color: white;
+    h1{
+
+        margin: 0;
+        padding-top: 12%;
+        font-size: 5rem;
+        text-shadow: 5px 5px 10px black;
+        letter-spacing: .5rem;
+        text-align: center;
+    }
 }
 .page-content {
     padding: 0 10%;
@@ -53,11 +78,60 @@ footer {
 }
 .book-info,
 .lessons-info {
-    width: 75%;
+    width: 50%;
+    button {
+        width: 100%;
+        padding: 2%;
+        border: none;
+        background: linear-gradient(#01332e,#042826, #01332e);
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: .15rem;
+        text-shadow: 2px 2px 5px #666;
+        &:hover {
+            background: linear-gradient(#486d71,#01332e, #486d71);
+            text-shadow: 2px 2px 5px black;
+        }
+    }
 }
-.book-image figure{
-    width: 90%;
-    margin: 0;
+.book-image {
+    width: 50%;
+    figure{
+        margin: 5%;
+
+        img {
+            transform: perspective( 1000px ) rotateY( 12deg );
+        }
+    }
 }
+.lessons-image {
+    width: 50%;
+    figure{
+        margin: 5%;
+        transform: perspective( 1000px ) rotateY( -15deg );
+        video {
+            border-radius: .25%;
+            transform: perspective( 1000px ) rotateY( -15deg );
+        }
+    }
+}
+footer {
+    background-color: $primary-color;
+    padding: 2% 5%;
+}
+.site-footer {
+    p {
+        color: white;
 
-
+    }
+    button {
+        width: 100%;
+        margin-top: 5%;
+        padding: 1%;
+        border: none;
+        background: white;
+        color: $primary-color;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

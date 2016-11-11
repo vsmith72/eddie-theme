@@ -17,41 +17,127 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-img {
+/* line 24, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5; }
+
+/* line 28, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #01332e; }
+
+/* line 33, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+p {
+  font-size: 1.25rem;
+  text-align: justify;
+  text-align-last: left; }
+
+/* line 39, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+img,
+video {
   width: 100%; }
 
-footer {
-  background-color: #003444;
-  height: 150px;
-  padding: 10%; }
+/* line 43, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+.content {
+  display: flex;
+  justify-content: space-around; }
 
+/* line 47, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
 .hero-area {
+  display: flex;
+  justify-content: center;
+  align-content: center;
   background-image: url("img/bg-guitar.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 600px; }
+  height: 60vh;
+  color: white; }
+  /* line 58, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+  .hero-area h1 {
+    margin: 0;
+    padding-top: 12%;
+    font-size: 5rem;
+    text-shadow: 5px 5px 10px black;
+    letter-spacing: .5rem;
+    text-align: center; }
 
+/* line 68, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
 .page-content {
   padding: 0 10%; }
 
+/* line 73, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
 .content-book,
 .content-lessons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   min-height: 75vh; }
 
+/* line 80, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
 .book-info,
 .lessons-info {
-  width: 75%; }
+  width: 50%; }
+  /* line 82, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+  .book-info button,
+  .lessons-info button {
+    width: 100%;
+    padding: 2%;
+    border: none;
+    background: linear-gradient(#01332e, #042826, #01332e);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    text-shadow: 2px 2px 5px #666; }
+    /* line 91, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+    .book-info button:hover,
+    .lessons-info button:hover {
+      background: linear-gradient(#486d71, #01332e, #486d71);
+      text-shadow: 2px 2px 5px black; }
 
-.book-image figure {
-  width: 90%;
-  margin: 0; }
+/* line 97, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+.book-image {
+  width: 50%; }
+  /* line 99, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+  .book-image figure {
+    margin: 5%; }
+    /* line 102, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+    .book-image figure img {
+      transform: perspective(1000px) rotateY(12deg); }
+
+/* line 107, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+.lessons-image {
+  width: 50%; }
+  /* line 109, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+  .lessons-image figure {
+    margin: 5%;
+    transform: perspective(1000px) rotateY(-15deg); }
+    /* line 112, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+    .lessons-image figure video {
+      border-radius: .25%;
+      transform: perspective(1000px) rotateY(-15deg); }
+
+/* line 118, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+footer {
+  background-color: #01332e;
+  padding: 2% 5%; }
+
+/* line 123, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+.site-footer p {
+  color: white; }
+
+/* line 127, W:/sites/eddie/wp-content/themes/eddie-theme/scss/style.scss */
+.site-footer button {
+  width: 100%;
+  margin-top: 5%;
+  padding: 1%;
+  border: none;
+  background: white;
+  color: #01332e;
+  text-align: center;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */

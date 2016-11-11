@@ -9,7 +9,8 @@
                 "outputStyle": "nested"
             },
             "brackets-git.gitPath": "git",
-            "mikaeljorhult.bracketsPHPLintTools.php-available": true
+            "mikaeljorhult.bracketsPHPLintTools.php-available": true,
+            "brackets-git.terminalCommand": "C:\\Program Files\\Git\\git-bash.exe"
         }
     }
 }
